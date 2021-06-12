@@ -1,0 +1,640 @@
+
+
+*{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+body {
+    background: rgb(19, 19, 19);
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+div{
+    display: flex;
+}
+/*Buttons*/
+.btn{
+    padding: 20px 50px;
+    margin: 10px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.btn1::before{
+    content: '';
+    position: absolute;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s ease;
+    transform-origin: bottom right;
+    transform: rotate(90deg);
+}
+.btn1:hover::before{
+    transform: rotate(0deg);
+}
+.btn2::before{
+    content: '';
+    position: absolute;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s ease;
+    transform-origin: bottom right;
+    transform: translateX(100%);
+}
+.btn2:hover::before{
+    transform: translateX(0);
+}
+.btn3::before{
+    content: '';
+    position: absolute;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s ease;
+    transform-origin: bottom right;
+    transform: translateY(100%);
+}
+.btn3:hover::before{
+    transform: translateY(0);
+}
+.btn4::before{
+    content: '';
+    position: absolute;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s ease;
+    transform-origin: center;
+    transform:rotateX(90deg);
+}
+.btn4:hover::before{
+    transform: rotateX(0deg);
+}
+.btn5::before{
+    content: '';
+    position: absolute;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s ease;
+    transform-origin: center;
+    transform:rotateY(90deg);
+}
+.btn5:hover::before{
+    transform: rotateY(0deg);
+}
+.btn6::before{
+    content: '';
+    position: absolute;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s ease;
+    transform-origin: center;
+    transform:rotateX(90deg);
+}
+.btn6:hover::before{
+    transform: rotateX(0deg);
+}
+.btn6::after{
+    content: '';
+    position: absolute;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s ease;
+    transform-origin: center;
+    transform:rotateY(90deg);
+}
+.btn6:hover::after{
+    transform: rotateY(0deg);
+}
+
+.btn7::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 30px;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+    transition: all 1s ease;
+    transform-origin: center;
+    transform:translateX(-100%) rotate(45deg);
+}
+.btn7:hover{
+    background-color: tomato;
+}
+.btn7:hover::before{
+    transform:translateX(100%) rotate(45deg);
+}
+.btn8{
+    color: transparent;
+}
+.btn8::before{
+    content: 'Hover Me';
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+    transform-origin: center;
+}
+.btn8:hover::before{
+    transform:translateX(100%) translateY(-100%);
+}
+.btn8::after{
+    content: 'Hover Me';
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+    transform-origin: center;
+    transform: translateX(-100%) translateY(100%);
+}
+.btn8:hover::after{
+    transform:translateX(0) translateY(0);
+}
+.btn9::before{
+    content: 'Hover Me';
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 800ms ease;
+    transform: scale(5);
+    opacity: 0;
+    transform-origin: center;
+}
+.btn9:hover::before{
+    transform:scale(1);
+    opacity: 1;
+
+}
+.btn10::before{
+    content: '';
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    width: 100%;
+    height: 0%;
+    top: 0px;
+    left: 0;
+    display: flex;
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    justify-content: center;
+    align-items: center;
+    transition: all 800ms ease;
+    transform-origin: center;
+}
+.btn10:hover::before{
+    height: 190%;
+
+}
+.btn11{
+    overflow: visible;
+}
+.btn11::before{
+    content: 'Hover Me';
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    display: flex;
+    transform: rotateX(0deg);
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ;
+    transform-origin: bottom;
+}
+.btn11:hover::before{
+    transform: rotateX(270deg);
+
+}
+.btn12{
+    overflow: visible;
+}
+.btn12::before{
+    content: 'Thanks';
+    position: absolute;
+    color: white;
+    background-color: tomato;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    display: flex;
+    transform: rotateX(270deg);
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ;
+    transform-origin: top;
+}
+.btn12:hover::before{
+    transform: rotateX(0deg);
+
+}
+.btn13{
+    border: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.btn13 .s1{
+    position: absolute;
+    background-color: tomato;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    transform: translateX(-100%);
+}
+.btn13 .s2{
+    position: absolute;
+    background-color: tomato;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease;
+    transition-delay: .2s;
+    transform: translateY(-100%);
+}
+.btn13 .s3{
+    position: absolute;
+    background-color: tomato;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s ease;
+    transition-delay: .4s;
+    transform: translateX(100%);
+}
+.btn13 .s4{
+    position: absolute;
+    background-color: tomato;
+    width: 2px;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    transition-delay: .6s;
+    transform: translateY(100%);
+}
+.btn13:hover .s1{
+    transform: translateX(0);
+    transition-delay: .1s;
+}
+.btn13:hover .s2{
+    transform: translateY(0);
+}
+.btn13:hover .s3{
+    transform: translateX(0);
+}
+.btn13:hover .s4{
+    transform: translateY(0);
+}
+.btn14{
+    border: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.btn14 .s1{
+    position: absolute;
+    background-color: tomato;
+    width: 50%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+}
+.btn14 .s2{
+    position: absolute;
+    background-color: tomato;
+    width: 50%;
+    height: 2px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.btn14 .s3{
+    position: absolute;
+    background-color: tomato;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-delay: 1s;
+    transform: translateY(-100%);
+    transition: all 0.3s ease;
+}
+.btn14 .s4{
+    position: absolute;
+    background-color: tomato;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition-delay: 1s;
+    transform: translateY(-100%);
+    transition: all 0.2s ease;
+}
+.btn14 .s5{
+    position: absolute;
+    background-color: tomato;
+    width: 50%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition-delay: 2s;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.btn14 .s6{
+    position: absolute;
+    background-color: tomato;
+    width: 50%;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition-delay: 2s;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+}
+.btn14:hover .s1{
+    transform: translateX(0);
+    opacity: 1;
+}
+.btn14:hover .s2{
+    transform: translateX(0);
+    opacity: 1;
+}
+.btn14:hover .s3{
+    transform: translateY(0);
+    opacity: 1;
+}
+.btn14:hover .s4{
+    transform: translateY(0);
+    opacity: 1;
+}
+.btn14:hover .s5{
+    transform: translateX(0);
+    opacity: 1;
+}
+.btn14:hover .s6{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+/*Buttons*/
+
+/*Navigation Bars*/
+.nav ul{
+    display: flex;
+}
+.nav a{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin: 0 20px;
+    text-align: center;
+    position: relative;
+    line-height: 40px;
+    transition: all 0.5s ease; 
+}
+.nav span{
+    position: absolute;
+    width: 25%;
+    text-align: center;
+    height: 100%;
+    background-color: tomato;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.5s ease;
+}
+.nav span:nth-child(2){
+    left: 25%;
+    transition-delay: 100ms;
+}
+.nav span:nth-child(3){
+    left: 50%;
+    transition-delay: 200ms;
+}
+.nav span:nth-child(4){
+    left: 75%;
+    transition-delay: 300ms;
+}
+.nav a:hover span{
+    transform: scaleY(1);
+}
+.nav1 span{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 25%;
+    background-color: tomato;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.5s ease;
+}
+.nav1 ul{
+    display: flex;
+    
+}
+.nav1 a{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin: 0 20px;
+    text-align: center;
+    position: relative;
+    line-height: 40px;
+    transition: all 0.5s ease; 
+}
+.nav1 span:nth-child(2){
+    top: 25%;
+    transition-delay: 100ms;
+}
+.nav1 span:nth-child(3){
+    top: 50%;
+    transition-delay: 200ms;
+}
+.nav1 span:nth-child(4){
+    top: 75%;
+    transition-delay: 300ms;
+}
+.nav1 a:hover span{
+    transform: scaleX(1);
+}
+.nav2 ul{
+    display: flex;
+    
+}
+.nav2 a{
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin: 0 20px;
+    text-align: center;
+    position: relative;
+    line-height: 40px;
+    transition: all 0.5s ease; 
+}
+.nav2 a:before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: tomato;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    transform: scaleX(-0%);
+    transform-origin: left;
+    transition: all 0.5s ease;
+}
+.nav2 a:hover::before{
+    transform: scaleX(1);
+}
+.nav2 a:after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: tomato;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(-0%);
+    transform-origin: right;
+    transition: all 0.5s ease;
+}
+.nav2 a:hover::after{
+    transform: scaleX(1);
+}
+.nav3 ul{
+    display: flex;
+    
+}
+.nav3 a{
+    display: block;
+    width: 80px;
+    height: 40px;
+    margin: 0 43px;
+    text-align: center;
+    position: relative;
+    line-height: 40px;
+    transition: all 0.5s ease; 
+}
+.nav3 a:before{
+    content: '';
+    width: 10%;
+    height: 10px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    border: 3px solid white;
+    border-width: 3px 0 0px 3px;
+    transition: all 0.5s ease;
+    opacity: 0;
+    
+}
+.nav3 a:after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    border: 3px solid white;
+    border-width: 0px 3px 3px 0px;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+.nav3 a:hover{
+    background-color: tomato;
+}
+.nav3 a:hover:before{
+    opacity: 1;
+    left: -8px;
+    top: -8px;
+}
+.nav3 a:hover:after{
+    opacity: 1;
+    right: -8px;
+    bottom: -8px;
+}
